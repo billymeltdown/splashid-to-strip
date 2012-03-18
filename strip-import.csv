@@ -1,0 +1,12 @@
+Category,Entry,Account #,Acct #,Bank,Branch,Card #,Code,Creator,Date,Document Type,Expir. Date,Field 3,Field 4,Field 5,Field 6,Field 7,Field 8,Field 9,Group #,Insured,Name,Number,PIN,POP3 Host,Password,Phone #,Policy #,Reseller,SMTP Host,Serial #,URL,Username
+Web Logins,Amazon [Sample],"","","","","","","","","","","","","","","","","","","","","","","",mom67rib,"","","","","",www.amazon.com,johndoe
+Bank Accts,Checking [Sample],92-5643-2410,"","",Wells Fargo,"","","","","","","","","","","","","","","",John Doe,"",8616,"","",310-555-1212,"","","","","",""
+Email Accts,Email [Sample],"","","","","","","","","","","","","","","","","","","","","","",mail.home.com,bleb76ro,"","","",mail.home.com,"","",jdoe
+Frequent Flyer,United [Sample],"","","","","","","",05/03,"","","","","","","","","","","",John Doe,9215786,"","","","","","","","","",""
+Credit Cards,Visa [Sample],"","",MBNA,"",1234-5555-6666-7777,"","","","",03/06,"","","","","","","","","",John Doe,"",2897,"","","","","","","","",""
+Insurance,Blue Cross [Sample],"","","","","","","","","","","","","","","","","",12345,Fox Moulder,"","","","","","",6554317,"","","","",""
+Identification,Driver License [Sample],"","","","","","","",04/1961,"","","","","","","","","","","",John Doe,654541,"","","","","","","","","",""
+Memberships,AAA [Sample],"",12345,"","","","","",01/01,"","","","","","","","","","","",John Doe,"","","","","","","","","","",""
+Combinations,Locker Combo [Sample],"","","","","",1234,"","","","",Gould's Gym,"","","","","","","","","","","","","","","","","","","",""
+Serial Numbers,Adobe Photoshop [Sample],"","","","","","","",01/04,"","","","","","","","","","","","","","","","","","","","",65456-54656-5645465,"",""
+Files,End User License Agreement,"","","","","","",SplashData,5/17/10,Text,"","","","","","","","","","","","","","","","","","","","","",""
