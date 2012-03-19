@@ -1,10 +1,9 @@
-require 'active_support/all'
 require 'csv'
 
 $stdout.sync=true
 
-splashid_filename = ARGV[0].blank? ? 'SplashID Export.vid' : ARGV[0]
-strip_filename = ARGV[1].blank? ? 'strip-import.csv' : ARGV[1]
+splashid_filename = ARGV[0].nil? ? 'SplashID Export.vid' : ARGV[0]
+strip_filename = ARGV[1].nil? ? 'strip-import.csv' : ARGV[1]
 
 unless File.exists?(splashid_filename)
   $stderr.print "Error: File #{splashid_filename} does not exist.\n"
@@ -48,7 +47,7 @@ CSV.foreach(splashid_filename) do |row|
     ckey    = row[1].to_sym
     efields = {}
     row[3..10].each_with_index do |field, idx|
-      unless field.blank?
+      unless field == '' || field == nil
         field_name = categories[ckey][:fields][idx]
         efields[field_name] = field
       end
@@ -73,7 +72,7 @@ CSV.open(strip_filename, "wb") do |csv|
     row = [ entry[:category], entry[:name] ]
     # for each field type, add the value if the entry has one, or emit a blank
     fields.each do |f|
-      if entry[:fields][f].blank?
+      if entry[:fields][f] == '' || entry[:fields][f] == nil
         row << ''
       else 
         row << entry[:fields][f]
